@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#sisseehitatud tsüklid
+echo "sisesta ridade arv"
+read arv
+echo "sisesta tärnide arv reas"
+read tarv
+for (( i = 1; i <= $arv; i++ ))
+do
+	echo -n "$i. "
+	for (( j = 1 ; j <=$tarv ; j++))
+	do
+		echo -n "* "
+	done
+    echo " "
+done
