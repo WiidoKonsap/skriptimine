@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#kujund skriptis
+echo -e "sisesta ridade arv"
+read arv
+echo -e "sisesta tärnide arv reas"
+read tarv
+for (( r = 1; r <= $arv; r++ ))
+do
+	echo -n "$r. "
+	if [ $r -eq 1 -o $r -eq $arv ]; then
+		for (( t=1; t<=$tarv; t++))
+		do
+			echo -n "* "
+		done
+	else
+		echo -n "* "
+		for (( t=2 t<$tarv; t++))
+		do
+			echo -n " "
+		done
+		echo -n " "
+	fi
+	echo ""
+done
