@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#kolmnurk vasakult paremale
+#
+for ((r=5; r>0; r--))
+do 
+   # trükime reanumbri ilma reavahetuseta
+	echo -n "$r"
+	for ((v=1; v<=$r; v++))
+	do
+	echo -n "*"
+	done
+   # kui rida lõpped - reavahetus
+	echo
+done
