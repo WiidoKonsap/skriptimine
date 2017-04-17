@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#kell mis näitab aega
+a=`whoami`
+i=$(date +"%H")
+	if [ $i -lt 6 ];then
+	echo "Head ööd $a!"
+
+	elif [ $i -lt 12 ];then
+	echo "Here hommikust $a!"
+
+	elif [ $i -lt 19 ];then
+	echo "Tere päevast $a!"
+
+	elif [ $i -lt 23 ];then
+	echo "Tere õhtust $a!"
+
+	elif [ $i -lt 25 ];then
+	echo "Head ööd $a!"
+
+else
+echo "Vale arv"
+fi
